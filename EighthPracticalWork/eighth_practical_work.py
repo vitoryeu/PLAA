@@ -1,4 +1,3 @@
-# Імпорт необхідних бібліотек
 import yfinance as yf
 import pandas as pd
 import numpy as np
@@ -9,7 +8,7 @@ from statsmodels.tsa.arima.model import ARIMA
 from sklearn.metrics import mean_squared_error, mean_absolute_error
 
 # Завантаження даних акцій за останній рік (компанія Apple)
-ticker = "AAPL"  # Змінити на потрібний тикер
+ticker = "AAPL"
 data = yf.Ticker(ticker).history(period="1y")
 
 # Перевірка наявності пропущених значень
